@@ -10,7 +10,7 @@ public:
     ComplexNumber(double r = 0, double i = 0) : real(r), imag(i) {}
 
     // Function to print complex number
-    void display() {
+    void representation() {
         std::cout << real;
         if (imag >= 0)
             std::cout << "+";
@@ -43,21 +43,21 @@ int main() {
 
     // Display complex numbers
     std::cout << "a: ";
-    a.display();
+    a.representation();
     std::cout << std::endl;
 
     std::cout << "b: ";
-    b.display();
+    b.representation();
     std::cout << std::endl;
 
     std::cout << "c: ";
-    c.display();
+    c.representation();
     std::cout << std::endl;
 
     // Test addition
     ComplexNumber sum = a + b;
     std::cout << "Sum: ";
-    sum.display();
+    sum.representation();
     std::cout << std::endl;
 
     // Test equality
@@ -66,10 +66,10 @@ int main() {
     // Test conjugate
     ComplexNumber conjugate_a = a.conjugate();
     std::cout << "Conjugate of a: ";
-    conjugate_a.display();
+    conjugate_a.representation();
     ComplexNumber conjugate_c = c.conjugate();
     std::cout << "Conjugate of c: ";
-    conjugate_c.display();
+    conjugate_c.representation();
     std::cout << std::endl;
 
 
